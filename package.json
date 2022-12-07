@@ -1,0 +1,41 @@
+{
+  "name": "xauthmodule",
+  "version": "1.0.0",
+  "description": "npm package for auth",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest",
+    "test:dev": "jest --watch"
+  },
+  "author": "Deevanshu Kushwah",
+  "license": "MIT",
+  "repository": "",
+  "homepage": "",
+  "keywords": [
+    "auth",
+    "signup",
+    "login"
+  ],
+  "files": [
+    "Readme.md",
+    "LICENSE",
+    "./index.js",
+    "lib/"
+  ],
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jest": "^29.2.4",
+    "@types/jsonwebtoken": "^8.5.9",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
