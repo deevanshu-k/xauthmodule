@@ -10,7 +10,7 @@
   },
   "author": "Deevanshu Kushwah",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/deevanshu-k/xauthmodule.git",
   "homepage": "",
   "keywords": [
     "auth",
@@ -19,7 +19,6 @@
   ],
   "files": [
     "Readme.md",
-    "LICENSE",
     "./index.js",
     "lib/"
   ],
