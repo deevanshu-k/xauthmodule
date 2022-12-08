@@ -3,17 +3,14 @@ import jwt from 'jsonwebtoken';
 
 export class auth {
     secrect_key: string = '';
-    signupfnx: Function = new Function;
     expireIn: string = "15m";
 
-    constructor(secretValue: string, signupFunction: Function) {
+    constructor(secretValue: string) {
         this.secrect_key = secretValue;
-        this.signupfnx = signupFunction;
     }
 
-    signUp = async (email: string, password: string): Promise<signupInterface> => {
-        this.signupfnx();
-        let token = this.createToken(Date.now(), email)
+    signUp = async (signupfnx: Function): Promise<signupInterface> => {
+        let token:string = await signupfnx();
         return {
             token
         };

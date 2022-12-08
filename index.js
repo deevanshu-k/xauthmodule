@@ -1,6 +1,3 @@
-const {auth} = require('./lib');
+'use strict';
 
-a = new auth("hello",()=>{console.log("hello class");});
-a.signUp("user","pwd").then((d)=>{
-    console.log(d);
-});
+module.exports = require('./lib/index');
