@@ -15,10 +15,14 @@
   "keywords": [
     "auth",
     "signup",
-    "login"
+    "login",
+    "createToken",
+    "createHash",
+    "hash"
   ],
   "files": [
     "Readme.md",
+    "LICENSE",
     "./index.js",
     "lib/"
   ],
